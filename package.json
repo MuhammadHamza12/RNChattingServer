@@ -1,0 +1,32 @@
+{
+  "name": "votingserver",
+  "version": "1.0.0",
+  "main": "server.js ",
+  "author": "Muhammad madni ",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "generate-password": "^1.4.1",
+    "jsonwebtoken": "^8.4.0",
+    "jwt": "^0.2.0",
+    "mongoose": "^5.4.5",
+    "mongoose-unique-validator": "^2.0.2",
+    "morgan": "^1.9.1",
+    "nodemailer": "^5.1.1",
+    "nodemon": "^1.18.9",
+    "validator": "^10.11.0"
+  },
+  "scripts": {
+    "start": "nodemon node server.js",
+    "lint": "eslint server.js"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500"
+  }
+}
